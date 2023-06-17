@@ -1,0 +1,54 @@
+.nav_bg {
+  background-color: #0f1111;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav_bottom {
+  background-color: #232f3e;
+}
+
+.search_icon_bg,
+.search_icon_bg > input,
+.search_icon_bg > img {
+  display: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.icon {
+  width: 80px;
+}
+
+.link_css {
+  margin-left: 0.5rem;
+  font-size: small;
+}
+
+.link_css:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 601px) {
+  .link_css {
+    font-size: medium;
+  }
+
+  .search_icon_bg {
+    background-color: #febd69;
+    height: 2.5rem;
+    width: 100%;
+  }
+
+  .search_icon_bg > img {
+    display: block;
+  }
+
+  .search_icon_bg > input {
+    display: inline-flex;
+  }
+}
